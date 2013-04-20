@@ -1,0 +1,35 @@
+#eclipse project files
+.project
+.pydevproject
+.cproject
+
+#qtcreator project files
+*.user
+
+#c++ and ros stuff
+bin
+build
+cmake_install.cmake
+*.cfgc
+lib
+srv_gen
+msg_gen
+docs
+# there is some autogen stuff in src folder
+#under the name of the package
+*/src/*/*
+#cpp dir for ros autogen files
+# this doesn't ignore *.cpp files
+cpp
+
+#some data types
+*.pcd
+*.jpg
+
+#temp files
+*~
+core
+*.autosave
+
+#svn
+.svn
