@@ -1,0 +1,12 @@
+<package>
+  <description brief="rviz_markers_waitinglist">
+     rviz_markers_waitinglist
+  </description>
+  <author>parallels</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rviz_markers_waitinglist</url>
+  <depend package="roscpp"/>
+  <depend package="visualization_msgs"/>
+  <depend package="tf"/>
+</package>

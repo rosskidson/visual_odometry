@@ -1,0 +1,11 @@
+<launch>
+	<node name="file_publisher" pkg="imagepub_waitinglist" type="file_publisher">
+		<param name="file" value="/home/parallels/Desktop/Parallels Shared Folders/Home/Documents/Tracking and Detection/auto.jpeg" type="str"/>
+		<param name="frequency" value="5" type="int"/>
+	</node>
+	<node name="harris_corners" pkg="harris_waitinglist" type="harris_corners">
+		<param name="template_size" value="3" type="int"/>
+		<param name="threshold" value="0.1" type="double"/>
+	</node>
+	<node name="reconfigure_gui" pkg="dynamic_reconfigure" type="reconfigure_gui"/>
+</launch>

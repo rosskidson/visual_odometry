@@ -1,0 +1,24 @@
+<package>
+  <description brief="stereo_vo_waitinglist">
+
+     stereo_vo_waitinglist
+
+  </description>
+  <author>Karol Hausman</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/stereo_vo_waitinglist</url>
+  <depend package="roscpp"/>
+  <depend package="opencv2"/>
+  <depend package="image_transport"/>
+  <depend package="cv_bridge"/>
+  <depend package="tf"/>
+  <depend package="pcl"/>
+  <depend package="feature_cv_waitinglist"/>
+  <depend package="ransac_waitinglist"/>
+  <depend package="message_filters"/>
+  <depend package="image_geometry"/>
+
+</package>
+
+

@@ -1,0 +1,20 @@
+<launch>
+	<node name="cb_publisher" pkg="imagepub_waitinglist" type="cb_publisher">
+		<param name="width" value="500" type="int"/>
+		<param name="height" value="500" type="int"/>
+		<param name="square_size" value="100" type="int"/>
+		<param name="frequency" value="5" type="int"/>
+	</node>
+	<node name="file_publisher" pkg="imagepub_waitinglist" type="file_publisher">
+		<param name="file" value="/home/karol/ros_workspace/rvc_waitinglist/feature_cv_waitinglist/frame0000.jpg" type="str"/>
+		<param name="frequency" value="5" type="int"/>
+	</node>
+	<node name="image_changer" pkg="imagepub_waitinglist" type="image_changer">
+		<param name="brightness" value="-50" type="int"/>
+		<param name="contrast" value="1.5" type="double"/>
+	</node>
+	<node name="image_view" pkg="image_view" type="image_view">
+		<param name="/image" value="/image"/>
+		<param name="autosize" value="true"/>
+	</node>
+</launch>

@@ -1,0 +1,17 @@
+<package>
+  <description brief="ompl_car">
+
+     ompl_car
+
+  </description>
+  <author>Ross Kidson</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ompl_car</url>
+  <depend package="roscpp"/>
+  <depend package="visualization_msgs"/>
+  <depend package="tf"/>
+
+</package>
+
+

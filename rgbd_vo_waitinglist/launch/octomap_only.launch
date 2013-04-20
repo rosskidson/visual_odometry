@@ -1,0 +1,9 @@
+<launch>
+<node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+		<param name="resolution" value="0.0250" />
+		
+		<param name="frame_id" type="string" value="start" />
+		
+        <remap from="cloud_in" to="/rgbd_odometry/cloud_of_matches" />
+	</node>
+</launch>

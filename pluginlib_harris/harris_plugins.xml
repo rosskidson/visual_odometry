@@ -1,0 +1,5 @@
+<library path="lib/libharris_plugins">
+  <class name="pluginlib_harris/harris_corner_detector" type="harris_plugins::HarrisCornerDetector" base_class_type="harris_base::CornerDetector">
+    <description>This is the Harris Corner Detector as a plugin.</description>
+  </class>
+</library>

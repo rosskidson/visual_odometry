@@ -1,0 +1,48 @@
+<launch>
+    
+ <param name="/use_sim_time" value="true"/>-->
+
+        <node ns="stereo" pkg="stereo_image_proc" type="stereo_image_proc" name="stereo_image_proc" >
+        <param name="approximate_sync" type="bool" value="true" />
+        </node>
+
+        <node pkg="image_view" type="stereo_view" name="stereo_viewer">
+          <param name="approximate_sync" type="bool" value="true" />
+          <remap from="stereo" to="stereo"/>
+          <remap from="image" to="image_rect"/>
+        </node>
+
+  <node pkg="rviz" type="rviz" name="rviz" cwd="node" required="false" output="screen" />
+
+  <node pkg="image_view" type="image_view" name="image_view" cwd="node" required="false">
+    <remap from="image" to="/visual_odometry/depth_points_disparity"/>
+    <param name="autosize" value="true" />
+  </node>
+
+ <node pkg="dynamic_reconfigure" type="reconfigure_gui" name="dynamic_reconfigure" cwd="node" required="false" output="screen" />
+
+  <node pkg="stereo_vo_waitinglist" type="main" name="visual_odometry" cwd="node" required="true" output="screen" >
+    <param name="/feature_matcher/feature_detector"                 value="4"/>
+    <param name="/feature_matcher/feature_extractor"                value="4"/>
+    <param name="/feature_matcher/descriptor_matcher"                value="1"/>
+    <param name="/feature_matcher/horizontal_matches"                 value="true"/>
+    <param name="/feature_matcher/horizontal_threshold"               value="20"/>
+    <param name="/feature_matcher/matching_distance_ratio_threshold"  value="0.8"/>
+    <param name="/feature_matcher/max_radius_search_dist"             value="500"/>
+    <param name="/feature_matcher/tracking_matches"                   value="true"/>
+    <param name="/feature_matcher/tracking_threshold"                 value="120"/>
+    <param name="/feature_matcher/distance_factor"                    value="1.0"/>
+    <param name="/feature_matcher/feature_detector_parameter_name"    value="maxTotalKeypoints"/>
+    <param name="/feature_matcher/feature_detector_parameter_value"  value="2000"/>
+    <param name="/feature_matcher/feature_extractor_parameter_name"    value="orientationNormalized"/>
+    <param name="/feature_matcher/feature_extractor_parameter_value"  value="0"/>
+    <param name="/feature_matcher/timing_debug"  value="false"/>
+    <param name="/feature_matcher/double_check_tracking_matches"  value="1"/>
+    <param name="/feature_matcher/distinct_matches"  value="false"/>
+    <param name="/feature_matcher/reduce_search_area"  value="true"/>
+    <param name="/feature_matcher/search_distance"  value="100"/>
+
+  </node>
+
+
+</launch>

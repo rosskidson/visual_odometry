@@ -1,0 +1,21 @@
+<package>
+  <description brief="homography_waitinglist">
+
+     homography_waitinglist
+
+  </description>
+  <author>Ross Kidson</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/homography_waitinglist</url>
+  <depend package="roscpp"/>
+  <depend package="opencv2"/>
+  <depend package="image_transport"/>
+  <depend package="cv_bridge"/>
+  <depend package="dynamic_reconfigure"/>
+  <depend package="feature_cv_waitinglist"/>
+  <depend package="tf"/>
+
+</package>
+
+

@@ -1,0 +1,5 @@
+<library path="lib/libHarrisNodelet">
+  <class name="pluginlib_harris/HarrisNodelet" type="pluginlib_harris::HarrisNodelet" base_class_type="nodelet::Nodelet">
+  <description>This is the Harris Corner Detector as a nodelet</description>
+  </class>
+</library>

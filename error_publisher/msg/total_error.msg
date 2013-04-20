@@ -1,0 +1,2 @@
+float32 translation_error
+float32 rotation_error

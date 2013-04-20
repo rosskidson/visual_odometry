@@ -1,0 +1,21 @@
+<package>
+  <description brief="feature_cv_waitinglist">
+
+     feature_cv_waitinglist
+
+  </description>
+  <author>Ross Kidson</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/feature_cv_waitinglist</url>
+  <depend package="roscpp"/>
+  <!--<depend package="opencv2"/>-->
+  <depend package="dynamic_reconfigure"/>
+
+<export>
+  <cpp cflags="-I${prefix}/include" lflags="-L${prefix}/lib" />
+</export>
+
+</package>
+
+

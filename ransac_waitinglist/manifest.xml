@@ -1,0 +1,23 @@
+<package>
+  <description brief="ransac_waitinglist">
+
+     ransac_waitinglist
+
+  </description>
+  <author>Ross Kidson</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ransac_waitinglist</url>
+  <depend package="roscpp"/>
+  <depend package="opencv2"/>
+  <depend package="dynamic_reconfigure"/>
+  <depend package="tf"/>
+  <depend package="pcl"/>
+
+<export>
+  <cpp cflags="-I${prefix}/include" lflags="-L${prefix}/lib"  />
+</export>
+
+</package>
+
+

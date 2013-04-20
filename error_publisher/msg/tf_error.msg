@@ -1,0 +1,9 @@
+#translational error:
+float32 x
+float32 y
+float32 z
+#rotational error
+float32 axis_x
+float32 axis_y
+float32 axis_z
+float32 angle

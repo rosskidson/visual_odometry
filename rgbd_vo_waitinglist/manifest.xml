@@ -1,0 +1,23 @@
+<package>
+  <description brief="rgbd_vo_waitinglist">
+
+     rgbd_vo_waitinglist
+
+  </description>
+  <author>Ross Kidson</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rgbd_vo_waitinglist</url>
+  <depend package="roscpp"/>
+  <depend package="image_transport"/>
+  <depend package="tf"/>
+  <depend package="pcl"/>
+  <depend package="opencv2"/>
+  <depend package="cv_bridge"/>
+  <depend package="feature_cv_waitinglist"/>
+  <depend package="ransac_waitinglist"/>
+  <depend package="message_filters"/>
+
+</package>
+
+
